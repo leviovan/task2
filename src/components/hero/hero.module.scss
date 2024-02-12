@@ -1,13 +1,14 @@
 .hero {
     color: white;
     background-color: #484283;
-    height: 1000px;
+
     color: white;
     .body {
         position: relative;
         padding-top: 72px;
         padding-left: 51px;
         padding-right: 35px;
+        padding-bottom: 93px;
         .title {
             font-size: 36px;
             font-weight: 400;
@@ -41,9 +42,9 @@
             font-size: 200px;
             font-weight: 700;
             line-height: 289px;
-            top: 75%;
+            top: 58%;
             left: 50%;
-            transform: translate(-51%, -50%);
+            transform: translate(-51%, -48%);
         }
     }
 }

@@ -1,0 +1,21 @@
+.listCatalog {
+    width: 100%;
+    padding-top: 76px;
+    margin-left: 20px;
+    .list {
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        gap: 13px 19px;
+        margin-bottom: 26px;
+    }
+    .btn {
+        border-radius: 4px;
+        /* accent */
+        background: rgb(241, 79, 79);
+        padding: 25px 47px;
+        border: none;
+        margin: 0 auto;
+        display: block;
+    }
+}

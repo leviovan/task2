@@ -1,0 +1,16 @@
+.catalog {
+    padding-top: 55px;
+    color: rgb(68, 75, 88);
+    .body {
+        padding-left: 51px;
+        padding-right: 35px;
+        display: flex;
+        .title {
+            margin-bottom: 33px;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 43px;
+            letter-spacing: 0%;
+        }
+    }
+}

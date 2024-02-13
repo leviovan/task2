@@ -1,6 +1,6 @@
 
 import style from "./catalog.module.scss"
-import ListCatalog from "./parameters/listCatalog/listCatalog"
+import ListCatalog from "./listCatalog/listCatalog"
 import Parameters from './parameters/parametrs'
 
 const Catalog = () => {
@@ -13,9 +13,7 @@ const Catalog = () => {
                   <Parameters/>
                 </div>
                 <ListCatalog/>
-
             </div>
-
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 
 import style from './listCatalog.module.scss'
-import Productcard, { IProduct } from './productCard/productcard'
+import Productcard, { IProduct } from './Product/productcard'
 
 
 function ListCatalog() {

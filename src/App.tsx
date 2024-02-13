@@ -1,6 +1,8 @@
 import './App.css'
+import AboutUs from './components/aboutUs/aboutUs'
 import Catalog from './components/catalog/catalog'
 import Hero from './components/hero/hero'
+import ProductForYou from './components/productForYou/productForYou'
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
     <>
     <Hero/>
     <Catalog/>
+    <AboutUs/>
+    <ProductForYou/>
     </>
   )
 }

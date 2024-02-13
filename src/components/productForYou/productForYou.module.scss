@@ -1,0 +1,48 @@
+.productForYou {
+    color: rgb(68, 75, 88);
+    list-style: 150%;
+
+    .body {
+        border-radius: 4px;
+        background: rgb(255, 244, 238);
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: rgb(128, 128, 128);
+
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .content {
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .list{
+                display: flex;
+                flex-wrap: wrap;
+                gap:20px 70px  ;
+                  .item{
+                display: flex;
+                flex-direction: column;
+                .img{
+                    width: 280px;
+                    height: 120px;
+
+                }.checkbox{
+                    width: 24px;
+                    height: 24px;
+                }
+                .label{
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            }
+        }
+    }
+}

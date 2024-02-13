@@ -1,0 +1,80 @@
+.aboutUs {
+  background: rgb(72, 66, 131);
+  color: white;
+    position: relative;
+  .body {
+    display: flex;
+    justify-content: space-between;
+
+    .desc {
+      display: flex;
+      padding-left: 3px;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 455px;
+      width: 100%;
+
+      .title {
+        margin-top: 70px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 43px;
+        margin-bottom: 7px;
+      }
+
+      .text {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 140%;
+        max-width: 380px;
+        margin-bottom: 40px;
+      }
+
+      .tag {
+        display: flex;
+        align-items: flex-start;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: right;
+        align-self: flex-end;
+
+        &:before {
+          display: inline-block;
+          content: url(./src/img/Line-tag.png);
+          ;
+          margin-right: 17px;
+          line-height: 6px;
+        }
+      }
+    }
+
+
+    .containerImg {
+      overflow: hidden;
+      margin-left: 20px;
+      width: 500px;
+      height: 580px;
+      transform: skew(-17.5deg);
+      position: relative;
+      margin-right: 107px;
+
+      img {
+        width: 939.23px;
+        height: 633px;
+        position: absolute;
+        top: -50px;
+        right: 0;
+
+        left: -50%;
+        transform: translate(-51%, -48%);
+        transform: skew(17.5deg);
+      }
+    }
+    .bgFigure{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

@@ -9,16 +9,20 @@ const ProductForYou = () => {
                     We will select the perfect product for you
                 </h3>
                 <p className={style.subtitle}>Answer three questions and we will send you a catalog with the most suitable products for you.</p>
-
                 <div className={style.content}>
                     <h4 className={style.title}>What type of product are you considering?</h4>
                     <div className={style.list}>
                           {[...Array(6)].map((item,i)=><div key={`sheakers${i}`} className={style.item}> 
                     <img className={style.img} src="./../src/img/фото-кросовок.jpeg" alt="фото-кросовок" />
-                         <label  className={style.label}  htmlFor={`sneakers${i}`}><input className={style.checkbox}  type="checkbox" name={`sneakers${i}`} id={`sneakers${i}`}/>
-                       sneakers</label>
+                        <span><input className={style.checkbox}  type="checkbox" name={`sneakers${i}`} id={`sneakers${i}`}/>
+                        <label  className={style.label}  htmlFor={`sneakers${i}`}>sneakers</label>
+                        </span>
                     </div>)}
                     </div>
+                </div>
+                <div className={style.pagination}>
+                  <span className={style.step}>1 of 3</span>
+                  <button  className={style.nextStep}>Next step</button>
                 </div>
             </div>
 

@@ -2,11 +2,11 @@
   background: rgb(72, 66, 131);
   color: white;
     position: relative;
+    
     margin-bottom: 60PX;
   .body {
     display: flex;
     justify-content: space-between;
-
     .desc {
       display: flex;
       padding-left: 3px;
@@ -14,7 +14,8 @@
       justify-content: center;
       max-width: 455px;
       width: 100%;
-
+      z-index: 5;
+      padding-bottom: 20px;
       .title {
         margin-top: 70px;
         font-size: 30px;
@@ -59,7 +60,10 @@
       transform: skew(-17.5deg);
       position: relative;
       margin-right: 107px;
+      @media (max-width:1024px){
 
+        display: none;
+      }
       img {
         width: 939.23px;
         height: 633px;
@@ -68,8 +72,7 @@
         right: 0;
 
         left: -50%;
-        transform: translate(-51%, -48%);
-        transform: skew(17.5deg);
+        transform: skew(17.5deg) ;
       }
     }
     .bgFigure{

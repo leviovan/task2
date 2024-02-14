@@ -44,6 +44,12 @@
             top: 58%;
             left: 50%;
             transform: translate(-51%, -48%);
+            @media (max-width:1280px) {
+                    font-size: 150px;
+            }
+             @media (max-width:840px) {
+                    font-size: 130px;
+            }
         }
     }
 }

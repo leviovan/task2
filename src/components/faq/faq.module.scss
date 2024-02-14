@@ -1,9 +1,10 @@
 .faq {
   color: rgb(68, 75, 88);
-
+  padding-bottom: 93px;
   .body {
     padding-top: 60px;
-
+padding-left: 149px;
+    padding-right: 164px;
     .title {
       font-size: 30px;
       font-weight: 700;
@@ -12,7 +13,7 @@
     }
 
     .content {
-      
+      border-top:1px solid rgb(36, 36, 36); ;
     }
   }
 }

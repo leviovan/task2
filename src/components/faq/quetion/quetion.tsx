@@ -15,9 +15,9 @@ const Quetion = () => {
           <svg
             className={style.svg}
             style={!pop ? { transform: "rotate(45deg)" } : {}}
-            width="25.000000"
-            height="26.000000"
-            viewBox="0 0 25 26"
+            width="30.000000"
+            height="30.000000"
+            viewBox="0 0 30 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >

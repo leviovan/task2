@@ -1,0 +1,22 @@
+<svg width="541.000000" height="550.000000" viewBox="0 0 541 550" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip30968_68">
+			<rect width="541.000000" height="535.000000" transform="translate(0.000000 0.000031)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip30968_70">
+			<rect width="550.000000" height="424.000000" transform="translate(541.000000 0.000031) rotate(90.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect width="541.000000" height="535.000000" transform="translate(0.000000 0.000031)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip30968_68)">
+		<circle r="343.000000" transform="matrix(-1 1 0 0 343 192)" fill="#F14F4F" fill-opacity="1.000000"/>
+	</g>
+	<rect width="550.000000" height="424.000000" transform="translate(541.000000 0.000031) rotate(90.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip30968_70)">
+		<circle r="321.500000" transform="matrix(-4.37114e-08 -4.37114e-08 -1 1 439 -14)" stroke="#FFFFFF" stroke-opacity="0.500000" stroke-width="1.000000"/>
+		<circle r="148.000000" transform="matrix(-4.37114e-08 -4.37114e-08 -1 1 574.5 401.5)" stroke="#FFFFFF" stroke-opacity="0.500000" stroke-width="1.000000"/>
+	</g>
+</svg>

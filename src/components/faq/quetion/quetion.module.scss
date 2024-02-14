@@ -1,0 +1,44 @@
+.quetion {
+        margin-bottom: 10px;
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+            padding-top: 30px;
+          .title {
+            color: rgb(36, 36, 36);
+            margin-bottom: 16px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 29px;
+          }
+          .btn{
+            background: none;
+            border: none;
+            cursor: pointer;
+            .svg{
+                  transition: .3s;
+            }
+        //     .svgRotate{
+        //     transition: ;
+        //   }
+          }
+         
+        }
+        
+        .information { 
+         transition: 1s;
+         height: 0px;
+         overflow: hidden;
+          .text {
+            color: rgba(36, 36, 36, 0.5);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: 0%;
+          }
+        }
+        .pop{
+            height: 50px;
+        }
+      }

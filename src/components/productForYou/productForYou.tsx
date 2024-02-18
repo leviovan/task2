@@ -20,7 +20,7 @@ const ProductForYou = () => {
                 <div key={`sheakers${i}`} className={style.item}>
                   <img
                     className={style.img}
-                    src="./../src/img/фото-кросовок.jpeg"
+                    src="../src/img/photoShoes.jpeg"
                     alt="фото-кросовок"
                   />
                   <span>

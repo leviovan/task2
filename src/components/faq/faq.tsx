@@ -1,5 +1,3 @@
-import React from "react";
-
 import style from "./faq.module.scss";
 import Quetion from "./quetion/quetion";
 const Faq = () => {

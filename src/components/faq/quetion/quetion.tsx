@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import style from "./quetion.module.scss";
 import cx from "classnames";
 const Quetion = () => {

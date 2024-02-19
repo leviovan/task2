@@ -24,6 +24,10 @@
         width: 240px;
         margin-bottom: 32px;
         .item {
+            cursor: pointer;
+            overflow: hidden;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
             width: 120px;
             height: 57px;
             padding: 20px;
@@ -34,6 +38,9 @@
             border: 1px solid rgb(219, 187, 169);
             border-radius: 0px 1.14px 0px 0px;
             text-align: center;
+        }
+        .bgLight{
+                background: rgb(250, 219, 203);
         }
     }
     .btn {

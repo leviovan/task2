@@ -8,7 +8,6 @@ const Hero = () => {
         <Header />
         <div className={style.body}>
           <h1 className={style.title}>
-            {" "}
             Any products from famous brands with worldwide delivery
           </h1>
           <p className={style.text}>

@@ -1,7 +1,7 @@
 import style from "./productForYou.module.scss";
 const ProductForYou = () => {
   return (
-    <div className={style.productForYou}>
+    <div className={style.productForYou} id="ProductSelection">
       <div className="container">
         <div className={style.body}>
           <h3 className={style.title}>

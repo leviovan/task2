@@ -1,21 +1,39 @@
+import { useEffect, useState } from "react";
+import { IProduct } from "../../../store/category/categorySlice";
+import style from "./listCatalog.module.scss";
+import Productcard from "./Product/productcard";
 
-import style from './listCatalog.module.scss'
-import Productcard, { IProduct } from './Product/productcard'
+function ListCatalog({
+  products,
+  page,
+  setPage,
+}: {
+  products: IProduct[];
+  page: number;
+  setPage: () => void;
+}) {
+  const [list, setList] = useState<IProduct[]>([]);
 
+  console.log(products, "products");
+  console.log(list, "list");
 
-function ListCatalog() {
+  useEffect(() => {
+    setList(products.slice(0, page));
+  }, [products, page]);
+
   return (
     <div className={style.listCatalog}>
-
-     <div className={style.list}> 
-     {[...Array(9).fill({img:"https://www.thenextsole.com/storage/images/DD3384-600.png",name:"Nike Air Force 1 '07 QS'", price:"110 $"})].map((item:IProduct)=>(
-    <Productcard {...item}/>)
-      )}
-    
+      <div className={style.list}>
+        {list.length !== 0 &&
+          list.map((item: IProduct) => <Productcard {...item} />)}
       </div>
-      <button className={style.btn}> Shom more</button>
+      {products.length >= page && (
+        <button className={style.btn} onClick={() => setPage()}>
+          Shom more
+        </button>
+      )}
     </div>
-  )
+  );
 }
 
-export default ListCatalog
+export default ListCatalog;

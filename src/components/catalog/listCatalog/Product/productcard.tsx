@@ -1,18 +1,13 @@
-import  { FC } from "react";
+import { FC } from "react";
 import style from "./productcard.module.scss";
+import { IProduct } from "../../../../store/category/categorySlice";
 
-export interface IProduct {
-  img: string;
-  name: string;
-  price: string;
-}
-
-const Productcard: FC<IProduct> = ({ img, name, price}) => {
+const Productcard: FC<IProduct> = ({ id, images, price, title }) => {
   return (
-    <div className={style.product}>
-      <img className={style.img} src={img} alt={`Фото кросовок ${name}`} />
-      <h5 className={style.title}>{name}</h5>
-      <p className={style.price}>{price}</p>
+    <div key={`${title} ${id}`} className={style.product}>
+      <img className={style.img} src={images[0]} alt={`${title}`} />
+      <h5 className={style.title}>{title}</h5>
+      <p className={style.price}>{price} $</p>
     </div>
   );
 };

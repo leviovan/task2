@@ -2,7 +2,7 @@ import style from "./faq.module.scss";
 import Quetion from "./quetion/quetion";
 const Faq = () => {
   return (
-    <div className={style.faq}>
+    <div className={style.faq} id="FAQ">
       <div className="container">
         <div className={style.body}>
           <h2 className={style.title}>FAQ</h2>

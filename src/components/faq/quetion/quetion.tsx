@@ -8,7 +8,7 @@ const Quetion = () => {
     return setPop(!pop);
   };
   return (
-    <div className={style.quetion}>
+    <div className={style.quetion} key={"sss"}>
       <div className={style.header}>
         <h4 className={style.title}>Question 1</h4>
         <button className={style.btn} onClick={() => handlerClose()}>
@@ -27,8 +27,8 @@ const Quetion = () => {
               id="+"
               d="M12.9509 12.3623L25 12.3623L25 13.6622L12.9509 13.6622L12.9509 26L11.5732 26L11.5732 13.6622L0 13.6622L0 12.3623L11.5732 12.3623L11.5732 0L12.9509 0L12.9509 12.3623Z"
               fill="#000000"
-              fill-opacity="1.000000"
-              fill-rule="nonzero"
+              fillOpacity="1.000000"
+              fillRule="nonzero"
             />
           </svg>
         </button>

@@ -2,7 +2,7 @@ import style from "./team.module.scss";
 
 const Team = () => {
   return (
-    <div className={style.team}>
+    <div className={style.team} id="team">
       <div className="container">
         <div className={style.body}>
           <h2 className={style.title}>Our team</h2>

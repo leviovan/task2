@@ -1,4 +1,4 @@
-import Navigation from "../nabigation/navigation";
+import Navigation from "../../navigation/navigation";
 import style from "./footer.module.scss";
 const Footer = () => {
   return (

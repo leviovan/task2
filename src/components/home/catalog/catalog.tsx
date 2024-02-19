@@ -3,13 +3,13 @@ import style from "./catalog.module.scss";
 import ListCatalog from "./listCatalog/listCatalog";
 import Parameters from "./parameters/parametrs";
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../../store/store";
+import { AppDispatch, RootState } from "../../../store/store";
 import {
   IProduct,
   fetchCategory,
   fetchProductByParam,
   fetchProducts,
-} from "../../store/categories/categorySlice";
+} from "../../../store/categories/categorySlice";
 
 const Catalog = () => {
   const dispatch = useDispatch<AppDispatch>();

@@ -5,9 +5,9 @@ import {
   fetchProductsRequest,
   fetchProductsWithLimit,
 } from "../../store/categories/categorySlice";
-import { HTMLInputTypeAttribute, useEffect, useState } from "react";
-import ListCatalog from "../catalog/listCatalog/listCatalog";
+import { useEffect, useState } from "react";
 import Search from "./search/search";
+
 const Admin = () => {
   const products = useSelector((s: RootState) => s.category.product.products);
   const [page, setPage] = useState(9);
@@ -30,15 +30,11 @@ const Admin = () => {
           <h2 className={style.title}>All products</h2>
           <Search
             onClick={() => requestHandler(request)}
-            setRequest={(e: HTML) => setRequest(e.currentTarget.value)}
+            setRequest={(e) => setRequest(e.currentTarget.value)}
             request={request}
           />
           <div className={style.list}>
-            <ListCatalog
-              products={products}
-              page={page}
-              setPage={() => setPage((i) => i + 9)}
-            />
+            <list></list>
           </div>
         </div>
       </div>

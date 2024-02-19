@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { IProduct } from "../../../store/categories/categorySlice";
 import style from "./listCatalog.module.scss";
 import Productcard from "./Product/productcard";
+import { IProduct } from "../../../../store/categories/categorySlice";
 
 function ListCatalog({
   products,

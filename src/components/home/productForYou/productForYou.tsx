@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import style from "./productForYou.module.scss";
-import { RootState } from "../../store/store";
+import { RootState } from "../../../store/store";
+
 const ProductForYou = () => {
   const category = useSelector((s: RootState) => s.category.category);
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./listCatalog.module.scss";
 import Productcard from "./Product/productcard";
-import { IProduct } from "../../../../store/categories/categorySlice";
+import { IProduct } from "../../../../store/product/productSlice";
 
 function ListCatalog({
   products,
@@ -12,6 +12,8 @@ function ListCatalog({
   page: number;
   setPage: () => void;
 }) {
+  console.log(products);
+
   const [list, setList] = useState<IProduct[]>([]);
   useEffect(() => {
     setList(products.slice(0, page));

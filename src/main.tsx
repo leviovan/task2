@@ -30,17 +30,15 @@ const router = createBrowserRouter([
       </>
     ),
     errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "admin/:idProduct",
-        element: (
-          <>
-            <Header />
-            <AdminProduct />
-          </>
-        ),
-      },
-    ],
+  },
+  {
+    path: "admin/:idProduct",
+    element: (
+      <>
+        <Header />
+        <AdminProduct />
+      </>
+    ),
   },
 ]);
 

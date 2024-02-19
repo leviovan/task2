@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { IProduct } from "../../../store/categories/categorySlice";
+import { IProduct } from "../../../store/product/productSlice";
 import style from "./listCatalogAdmin.module.scss";
 import Productcard from "./Product/productcard";
 
-const listCatalogAdmin = ({
+const ListCatalogAdmin = ({
   products,
   page,
   setPage,
@@ -18,7 +18,7 @@ const listCatalogAdmin = ({
   }, [products, page]);
 
   return (
-    <div className={style.listCatalog}>
+    <div className={style.ListCatalogAdmin}>
       <div className={style.list}>
         {list.length !== 0 &&
           list.map((item: IProduct) => <Productcard {...item} />)}
@@ -32,4 +32,4 @@ const listCatalogAdmin = ({
   );
 };
 
-export default listCatalogAdmin;
+export default ListCatalogAdmin;

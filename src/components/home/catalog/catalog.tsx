@@ -5,23 +5,18 @@ import Parameters from "./parameters/parametrs";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../store/store";
 import {
-  IProduct,
-  fetchCategory,
   fetchProductByParam,
   fetchProducts,
-} from "../../../store/categories/categorySlice";
+} from "../../../store/product/productSlice";
+import { fetchCategory } from "../../../store/categories/categorySlice";
 
 const Catalog = () => {
   const dispatch = useDispatch<AppDispatch>();
   const [page, setPage] = useState(9);
   const [currentParametrs, setCurrentParametrs] = useState("tops");
 
-  const category = useSelector<RootState>(
-    (state) => state.category.category
-  ) as string[];
-  const products = useSelector<RootState>(
-    (state) => state.category.product.products
-  ) as IProduct[];
+  const category = useSelector((state: RootState) => state.category.category);
+  const products = useSelector((state: RootState) => state.product.products);
 
   useEffect(() => {
     dispatch(fetchCategory());

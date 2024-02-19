@@ -13,10 +13,6 @@ function ListCatalog({
   setPage: () => void;
 }) {
   const [list, setList] = useState<IProduct[]>([]);
-
-  console.log(products, "products");
-  console.log(list, "list");
-
   useEffect(() => {
     setList(products.slice(0, page));
   }, [products, page]);

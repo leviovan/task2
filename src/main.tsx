@@ -1,16 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
 import "normalize.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store/store.ts";
 import ErrorPage from "./components/erorrPage/erorrPage.tsx";
+import Admin from "./components/admin/admin.tsx";
+
+import Header from "./components/header/header.tsx";
+import App from "./App.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/admin",
+    element: (
+      <>
+        <Header />
+        <Admin />
+      </>
+    ),
     errorElement: <ErrorPage />,
   },
 ]);

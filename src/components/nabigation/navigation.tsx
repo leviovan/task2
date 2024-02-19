@@ -22,7 +22,7 @@ const Navigation = () => {
           <Link to="#FAQ"> FAQ</Link>
         </li>
         <li className={style.item}>
-          <NavLink to="#catalog"> ForStaff</NavLink>
+          <NavLink to="/admin"> ForStaff</NavLink>
         </li>
       </ul>
     </nav>

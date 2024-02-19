@@ -1,12 +1,12 @@
 .hero {
     color: white;
     background-color: #484283;
-
+   
     color: white;
     .body {
         position: relative;
         padding-top: 72px;
-
+ border-top: 1px solid rgba(255, 255, 255, 0.5);
         padding-bottom: 93px;
         .title {
             font-size: 36px;
@@ -24,6 +24,7 @@
             margin-bottom: 40px;
         }
         .btn {
+            color:white;
             font-size: 16px;
             font-weight: 400;
             line-height: 23px;

@@ -1,11 +1,9 @@
-import Header from "./header/header";
 import style from "./hero.module.scss";
 
 const Hero = () => {
   return (
     <div className={style.hero}>
       <div className="container">
-        <Header />
         <div className={style.body}>
           <h1 className={style.title}>
             Any products from famous brands with worldwide delivery

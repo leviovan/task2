@@ -1,6 +1,6 @@
-import { HashLink as Link } from "react-router-hash-link";
-import { NavLink } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import style from "./navigation.module.scss";
+
 const Navigation = () => {
   return (
     <nav className={style.nav}>
@@ -15,7 +15,7 @@ const Navigation = () => {
           <Link to="#ProductSelection"> Product selection</Link>
         </li>
         <li className={style.item}>
-          <Link to="#tea"> our team</Link>
+          <Link to="#team"> our team</Link>
         </li>
         <li className={style.item}>
           <Link to="#FAQ"> FAQ</Link>

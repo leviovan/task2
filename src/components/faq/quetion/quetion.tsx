@@ -7,6 +7,7 @@ const Quetion = () => {
   const handlerClose = () => {
     return setPop(!pop);
   };
+
   return (
     <div className={style.quetion} key={"sss"}>
       <div className={style.header}>

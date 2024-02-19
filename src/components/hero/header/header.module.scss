@@ -12,50 +12,6 @@
             line-height: 120%;
             letter-spacing: 0%;
         }
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-           
-            .list {
-                gap: 36px;
-                display: flex;
-                align-items: center;
-                font-size: clamp(8px,80%, 20px);
-                font-weight: 600;
-                line-height: 160%;
-                letter-spacing: 0%;
-                width: 100%;
-                 @media (max-width:1024px) {
-                   justify-content:flex-end;
-                }
-                .item {
-                    text-wrap: nowrap;
-                }
-            }
-            .cart {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                max-width: 90px;
-                width: 100%;
-
-                @media (max-width:1024px) {
-                        display: none;
-                }
-                .link {
-                    color: white;
-                    font-size: 14px;
-                    font-weight: 600;
-                    line-height: 160%;
-                    letter-spacing: 0%;
-                    display: inline-block;
-                }
-                .logo {
-                    display: inline-block;
-                    margin-top: -10px;
-                }
-            }
-        }
+   
     }
 }

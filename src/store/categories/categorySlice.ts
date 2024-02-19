@@ -37,10 +37,6 @@ const initialState: ICategory ={
       limit: 0
     }
 }
-   
-
-
-
 export const fetchCategory = createAsyncThunk(
   'category/fetchCategory',
   // Declare the type your function argument here:

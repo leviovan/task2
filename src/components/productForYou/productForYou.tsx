@@ -1,5 +1,9 @@
+import { useSelector } from "react-redux";
 import style from "./productForYou.module.scss";
+import { RootState } from "../../store/store";
 const ProductForYou = () => {
+  const category = useSelector((s: RootState) => s.category.category);
+
   return (
     <div className={style.productForYou} id="ProductSelection">
       <div className="container">
@@ -16,13 +20,8 @@ const ProductForYou = () => {
               What type of product are you considering?
             </h4>
             <div className={style.list}>
-              {[...Array(6)].map((_item, i) => (
+              {category.map((item, i) => (
                 <div key={`sheakers${i}`} className={style.item}>
-                  <img
-                    className={style.img}
-                    src="../src/img/photoShoes.jpeg"
-                    alt="фото-кросовок"
-                  />
                   <span>
                     <input
                       className={style.checkbox}
@@ -31,7 +30,7 @@ const ProductForYou = () => {
                       id={`sneakers${i}`}
                     />
                     <label className={style.label} htmlFor={`sneakers${i}`}>
-                      sneakers
+                      {item}
                     </label>
                   </span>
                 </div>

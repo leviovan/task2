@@ -9,7 +9,7 @@ import {
   fetchCategory,
   fetchProductByParam,
   fetchProducts,
-} from "../../store/category/categorySlice";
+} from "../../store/categories/categorySlice";
 
 const Catalog = () => {
   const dispatch = useDispatch<AppDispatch>();

@@ -19,7 +19,7 @@
       margin-bottom: 3px;
     }
     .content {
-      padding-top: 25px;
+       padding-top: 25px;
         padding-bottom: 40px;
         border-bottom: 1px solid rgb(128, 128, 128);;
         margin-bottom: 19px;
@@ -27,32 +27,35 @@
       .title {
         font-size: 24px;
         font-weight: 600;
-        margin-bottom: 12px;
+        margin-bottom:40px;
       }
       .list {
+        max-height: 200px;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         gap: 20px 70px;
-            justify-content: space-evenly;
+        justify-content: space-evenly;
         .item {
           display: flex;
           flex-direction: column;
-          .img {
-            width: 280px;
-            height: 120px;
-            margin-bottom: 10px;
-          }
+          text-overflow: ellipsis;
+          overflow: hidden;
+          text-wrap: nowrap;
           span {
             display: flex;
-            align-items: flex-end;
             .checkbox {
+              display: block;
+              flex: 1 1 20%;
               width: 24px;
               height: 24px;
               margin-right: 10px;
             }
-            .label {
-              font-size: 16px;
+            .label {  flex: 1 1 80%;
+               display: block;
+                font-size: 16px;
               font-weight: 600;
+              line-height: 23px;
             }
           }
         }

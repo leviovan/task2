@@ -5,8 +5,8 @@ const Search = ({
   setRequest,
   request,
 }: {
-  onClick: () => void;
-  setRequest: () => void;
+  onClick: (request: string) => void;
+  setRequest: (e: unknown) => void;
   request: string;
 }) => {
   console.log(request);

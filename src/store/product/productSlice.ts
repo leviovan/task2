@@ -3,6 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
 export interface IProducts {
   products: IProduct[]
+  productsQuiz: IProduct[]
   total: number
   skip: number
   limit: number
@@ -25,6 +26,7 @@ export interface IProduct {
 
 const initialState: IProducts = {
     products: [],
+    productsQuiz: [],
     total: 0,
     skip: 0,
     limit: 0,
@@ -54,7 +56,7 @@ export const fetchProducts = createAsyncThunk(
   'product/fetchProduct',
 
   async () => {
-    const response = await fetch(`https://dummyjson.com/products`)
+    const response = await fetch(`https://dummyjson.com/products?limit=100`)
     return (await response.json())
   },
 )
@@ -83,6 +85,22 @@ export const fetchProductsbyId = createAsyncThunk(
   },
 )
 
+export const updateProduct =createAsyncThunk(
+  'product/updateProduct',
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  async (product:any)=>{
+ fetch(`https://dummyjson.com/products/${product.id}`, {
+  method: 'PUT', /* or PATCH */
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(product)
+})
+.then(res => res.json())
+.then(console.log)
+  
+}
+
+,
+)
 
 export const productSlice = createSlice({
   name: 'product',
@@ -93,41 +111,45 @@ export const productSlice = createSlice({
     builder.addCase(fetchProductByParam.fulfilled, (state, { payload }) => {
       state.products = payload.products
     })
-    builder.addCase(fetchProductByParam.rejected, (state, action) => {
+    builder.addCase(fetchProductByParam.rejected, (_state, action) => {
       console.error("Не удалось загрузить Продукты", action.error)
     })
     builder.addCase(fetchProducts.fulfilled, (state, { payload }) => {
-        console.log(payload);
         
       state.products = payload.products
+      state.productsQuiz = payload.products
     })
-    builder.addCase(fetchProducts.rejected, (state, action) => {
+    builder.addCase(fetchProducts.rejected, (_state, action) => {
       console.error("Не удалось загрузить Продукты", action.error)
     })
     builder.addCase(fetchProductsWithLimit.fulfilled, (state, { payload }) => {
       state.products = payload.products
     })
-    builder.addCase(fetchProductsWithLimit.rejected, (state, action) => {
+    builder.addCase(fetchProductsWithLimit.rejected, (_state, action) => {
       console.error("Не удалось загрузить Продукты", action.error)
     })
      builder.addCase(fetchProductsRequest.fulfilled, (state, { payload }) => {
       state.products = payload.products
     })
-    builder.addCase(fetchProductsRequest.rejected, (state, action) => {
+    builder.addCase(fetchProductsRequest.rejected, (_state, action) => {
       console.error("Не удалось загрузить Продукты", action.error)
     })
     builder.addCase(fetchProductsbyId.fulfilled, (state, { payload }) => {
-      console.log(payload);
       
       state.currentProductAdmin = payload    })
-    builder.addCase(fetchProductsbyId.rejected, (state, action) => {
+      builder.addCase(fetchProductsbyId.rejected, (_state, action) => {
       console.error("Не удалось загрузить Продукты", action.error)
     })
+    builder.addCase(updateProduct.fulfilled, (_state, { payload }) => {
+      // state.products[payload.id] = payload
+      console.log(payload," успех");
+      
+    })
+    builder.addCase(updateProduct.rejected, (_state, action) => {
+        console.error("Не удалось обновить ", action.error)
+    })
   }
-
 })
 
-// Action creators are generated for each case reducer function
-// export const { } = categorySlice.actions
 
 export default productSlice.reducer

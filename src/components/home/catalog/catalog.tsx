@@ -13,7 +13,7 @@ import { fetchCategory } from "../../../store/categories/categorySlice";
 const Catalog = () => {
   const dispatch = useDispatch<AppDispatch>();
   const [page, setPage] = useState(9);
-  const [currentParametrs, setCurrentParametrs] = useState("tops");
+  const [currentParametrs, setCurrentParametrs] = useState("");
 
   const category = useSelector((state: RootState) => state.category.category);
   const products = useSelector((state: RootState) => state.product.products);

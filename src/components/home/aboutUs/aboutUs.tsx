@@ -15,7 +15,10 @@ const AboutUs = () => {
             <span className={style.tag}>Goods4you</span>
           </div>
           <div className={style.containerImg}>
-            <img src="../src/img/pexels-budgeron-bach-5158825 2.jpeg" alt="" />
+            <img
+              src="../src/img/pexels-budgeron-bach-5158825 2.jpeg"
+              alt="Картинка нас"
+            />
           </div>
           <svg
             className={style.bgFigure}

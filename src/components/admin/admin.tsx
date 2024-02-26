@@ -17,7 +17,6 @@ const Admin = () => {
   useEffect(() => {
     dispatch(fetchProductsWithLimit());
   }, []);
-  console.log(products, "products");
   const [request, setRequest] = useState("");
 
   const requestHandler = (request: string) => {
@@ -31,7 +30,7 @@ const Admin = () => {
           <h2 className={style.title}>All products</h2>
           <Search
             onClick={() => requestHandler(request)}
-            setRequest={(e) => setRequest(e.currentTarget.value)}
+            setRequest={(e: any) => setRequest(e.currentTarget.value)}
             request={request}
           />
           <div className={style.list}>

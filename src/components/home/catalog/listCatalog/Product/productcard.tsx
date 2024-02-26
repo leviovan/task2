@@ -1,7 +1,6 @@
 import { FC } from "react";
 import style from "./productcard.module.scss";
-
-import { IProduct } from "../../../../store/categories/categorySlice";
+import { IProduct } from "../../../../../store/product/productSlice";
 
 const Productcard: FC<IProduct> = ({ id, images, price, title }) => {
   return (

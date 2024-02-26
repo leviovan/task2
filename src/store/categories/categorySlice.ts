@@ -30,18 +30,14 @@ export const categorySlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(fetchCategory.fulfilled, (state, { payload }) => {
-      console.log(payload);
+ 
       
       state.category = payload
     })
-    builder.addCase(fetchCategory.rejected, (state, action) => {
+    builder.addCase(fetchCategory.rejected, (_state, action) => {
       console.error("Не удалось загрузить категориес", action.error)
     })
   }
-
 })
-
-// Action creators are generated for each case reducer function
-// export const { } = categorySlice.actions
 
 export default categorySlice.reducer

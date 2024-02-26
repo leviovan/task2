@@ -13,6 +13,7 @@ const ListCatalogAdmin = ({
   setPage: () => void;
 }) => {
   const [list, setList] = useState<IProduct[]>([]);
+
   useEffect(() => {
     setList(products.slice(0, page));
   }, [products, page]);

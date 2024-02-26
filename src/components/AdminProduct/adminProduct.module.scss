@@ -9,6 +9,7 @@
         font-size: 30px;
         font-weight: 700;
         line-height: 43px;
+        margin-bottom: 20px;
 }
 .body{
     display: flex;
@@ -16,10 +17,12 @@
 .swiperContainer{
     width: 570px;
     height:  520px;
+        margin-right: 20px;
 }
 .swiper{
    width: 570px;
     height:  520px;
+
 }
 .slide{
     width: 570px;
@@ -31,13 +34,11 @@
 }
 .key{
     color: rgb(178, 181, 187);
-
     font-size: 16px;
     font-weight: 600;
     line-height: 23px;
+    margin-bottom: 5px;
     span{
         color: rgb(68, 75, 88)
-
-
     }
 }

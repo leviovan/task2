@@ -81,7 +81,7 @@ const AdminProduct = () => {
               {Object.keys(character).map((key: string) => {
                 return (
                   <p className={style.key}>
-                    {key} <span> {character[key]}</span>
+                    {key} :<span> {character[key]}</span>
                   </p>
                 );
               })}
